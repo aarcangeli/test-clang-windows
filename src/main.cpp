@@ -2,7 +2,7 @@
 #include <thread>
 #include <vector>
 
-std::atomic_bool x = false;
+std::atomic_bool x;
 
 void print() {
     std::cout << "CIAO\n";
@@ -10,5 +10,6 @@ void print() {
 
 int main() {
     std::vector<int> a;
+    x = false;
     std::cout << x;
 }
